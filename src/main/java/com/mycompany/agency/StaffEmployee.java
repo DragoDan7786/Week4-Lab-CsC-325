@@ -3,7 +3,7 @@ package com.mycompany.agency;
 
     // TODO 1: Make StaffEmployee a child of StaffEmploee
 
-public class StaffEmployee extends Staff
+public class StaffEmployee extends StaffMember
 {
     String eName, eAddress, ePhone;
     protected String socialSecurityNumber;
