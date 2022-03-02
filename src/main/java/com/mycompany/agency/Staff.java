@@ -14,7 +14,7 @@ public class Staff
     {
         staffList = new StaffMember[6];
 
-        // TODO 1: Add 6 emploees to the staffList
+        // TODO 1: Add 6 employees to the staffList
         
         staffList[0] = new Executive("John" , "52 West Drive" , "347-888-3454" , "120-35-9898" , 35.0);
         staffList[1] = new Executive("John" , "52 West Drive" , "347-888-3454" , "120-35-9898" , 35.0);
