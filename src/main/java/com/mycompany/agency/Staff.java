@@ -15,7 +15,14 @@ public class Staff
         staffList = new StaffMember[6];
 
         // TODO 1: Add 6 emploees to the staffList
-
+        
+        staffList[0] = new Executive("John" , "52 West Drive" , "347-888-3454" , "120-35-9898" , 35.0);
+        staffList[1] = new Executive("John" , "52 West Drive" , "347-888-3454" , "120-35-9898" , 35.0);
+        staffList[2] = new Executive("John" , "52 West Drive" , "347-888-3454" , "120-35-9898" , 35.0);
+        staffList[3] = new TempEmployee("Miller" , "56 South Drive" , "347-777-1324" , "180-56-9898" , 15.0);
+        staffList[4] = new Executive("John" , "52 West Drive" , "347-888-3454" , "120-35-9898" , 35.0);
+        staffList[5] = new Executive("John" , "52 West Drive" , "347-888-3454" , "120-35-9898" , 35.0);
+        
         ((Executive)staffList[0]).awardBonus(500.00);
 
         ((TempEmploee)staffList[3]).addHours(40);
