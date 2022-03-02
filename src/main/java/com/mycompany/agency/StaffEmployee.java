@@ -5,7 +5,6 @@ package com.mycompany.agency;
 
 public class StaffEmployee extends StaffMember
 {
-    String eName, eAddress, ePhone;
     protected String socialSecurityNumber;
     protected double payRate;
 
@@ -16,9 +15,7 @@ public class StaffEmployee extends StaffMember
     public StaffEmployee(String eName, String eAddress, String ePhone,
             String socSecNumber, double rate)
     {
-        this.eName = eName;
-        this.eAddress = eAddress;
-        this.ePhone = ePhone;
+        super(eName, eAddress, ePhone);
         socialSecurityNumber = socSecNumber;
         payRate = rate;
     }
@@ -30,11 +27,11 @@ public class StaffEmployee extends StaffMember
     @Override
     public String toString()
     {
-        return "Name: " + eName + "\n" +
-                "Address: " + eAddress + "\n" +
-                "Phone: " + ePhone + "\n" +
-                "Social Security Number: " + socialSecurityNumber + "\n" +
-                "Pay Rate: " + payRate + "\n";
+        return "Name: " + this.name + "\n" +
+                "Address: " + this.address + "\n" +
+                "Phone: " + this.phone + "\n" +
+                "Social Security Number: " + this.socialSecurityNumber + "\n" +
+                "Pay Rate: " + this.payRate + "\n";
     }
 
     //-----------------------------------------------------------------
